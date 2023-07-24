@@ -18,7 +18,7 @@
       const encodedMessage = encodeURIComponent(message);
 
       // Create the WhatsApp URL.
-      const whatsappURL = `https://wa.me/${encodedPhoneNumber}?text=${encodeURIComponent("https://drive.google.com/uc?id=1qJhCGQKPxCnULV3htVZsZCjMaFF5wude&export=download")}`;
+      const whatsappURL = `https://wa.me/${encodedPhoneNumber}?text=${message}`;
 
       // Open WhatsApp Web or the WhatsApp app with the pre-filled message.
       window.open(whatsappURL);
