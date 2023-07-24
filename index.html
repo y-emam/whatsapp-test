@@ -1,26 +1,29 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Send WhatsApp Message</title>
-  </head>
-  <body>
-    <button onclick="sendWhatsAppMessage()">Send WhatsApp Message</button>
 
-    <script>
-      function sendWhatsAppMessage() {
-        const phoneNumber = "+201091720988"; // Replace with the recipient's phone number, including the country code.
-        const message = "Hello, this is a test message!"; // Replace with the desired message.
+<head>
+  <title>Send WhatsApp Message</title>
+</head>
 
-        // Encode the phone number and message for the URL.
-        const encodedPhoneNumber = encodeURIComponent(phoneNumber);
-        const encodedMessage = encodeURIComponent(message);
+<body>
+  <button onclick="sendWhatsAppMessage()">Send WhatsApp Message</button>
 
-        // Create the WhatsApp URL.
-        const whatsappURL = `https://wa.me/${encodedPhoneNumber}?text=${encodeURIComponent("https://drive.google.com/uc?id=1qJhCGQKPxCnULV3htVZsZCjMaFF5wude&export=download")}`;
+  <script>
+    function sendWhatsAppMessage() {
+      const phoneNumber = "+201091720988"; // Replace with the recipient's phone number, including the country code.
+      const message = "Hello, this is a test message!\n Yasser Emam is shareing his contact with you\n Phone Number: +20 109 172 0988 \n Email: yasseremam2002@gmail.com\n Just Wanted to tell you this is the test part.\n and thanks for your time :)"; // Replace with the desired message.
 
-        // Open WhatsApp Web or the WhatsApp app with the pre-filled message.
-        window.open(whatsappURL);
-      }
-    </script>
-  </body>
+      // Encode the phone number and message for the URL.
+      const encodedPhoneNumber = encodeURIComponent(phoneNumber);
+      const encodedMessage = encodeURIComponent(message);
+
+      // Create the WhatsApp URL.
+      const whatsappURL = `https://wa.me/${encodedPhoneNumber}?text=${encodeURIComponent("https://drive.google.com/uc?id=1qJhCGQKPxCnULV3htVZsZCjMaFF5wude&export=download")}`;
+
+      // Open WhatsApp Web or the WhatsApp app with the pre-filled message.
+      window.open(whatsappURL);
+    }
+  </script>
+</body>
+
 </html>
