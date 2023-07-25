@@ -11,8 +11,9 @@
   <script>
     const sendWhatsAppMessage = () => {
       const phoneNumber = "+201091720988"; // Replace with the recipient's phone number, including the country code.
-      //const message = "*Hi*, this is a test message!\n *Yasser Emam* is shareing his contact with you \n*Phone Number:* +20 109 172 0988 \n*Email:* yasseremam2002@gmail.com \nJust Wanted to tell you this is the test part.\n and thanks for your time :)"; // Replace with the desired message.
-      const message = "hi \nhi"
+      //const message = "*Hi*, \n*Yasser Emam* is shareing his contact with you \n*Phone Number:* +20 109 172 0988 \n*Email:* yasseremam2002@gmail.com \nJust Wanted to tell you this is the test part.\n and thanks for your time :)"; // Replace with the desired message.
+      const message = `hi 
+                      hi`
       // Encode the phone number and message for the URL.
       const encodedPhoneNumber = encodeURIComponent(phoneNumber);
       const encodedMessage = encodeURIComponent(message);
