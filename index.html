@@ -6,13 +6,10 @@
 </head>
 
 <body>
-  <button onclick="sendWhatsAppMessage()">Send WhatsApp Message</button>
+  <button onclick="sendWhatsAppMessage('+201069239449', '*Hi*, %0A*Yasser Emam* is shareing his contact with you %0A*Phone Number:* +20 109 172 0988 %0A*Email:* yasseremam2002@gmail.com')">Send WhatsApp Message</button>
 
   <script>
-    const sendWhatsAppMessage = () => {
-      const phoneNumber = "+201069239449"; // Replace with the recipient's phone number, including the country code.
-      const message = "*Hi*, %0A*Yasser Emam* is shareing his contact with you %0A*Phone Number:* +20 109 172 0988 %0A*Email:* yasseremam2002@gmail.com"; // Replace with the desired message.
-      
+    const sendWhatsAppMessage = (phoneNumber, message) => {
       // Encode the phone number and message for the URL.
       const encodedPhoneNumber = encodeURIComponent(phoneNumber);
       const encodedMessage = encodeURIComponent(message);
